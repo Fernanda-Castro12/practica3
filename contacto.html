@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto - Cadisoft</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Inicio</a> |
+        <a href="/quienes_somos">Quiénes Somos</a> |
+        <a href="/servicios">Servicios</a> |
+        <a href="/noticias">Noticias</a> |
+        <a href="/contacto">Contacto</a>
+    </nav>
+    <h2>Contacto</h2>
+    <form method="POST" action="/contacto">
+        <input type="text" name="nombre" placeholder="Nombre" required><br>
+        <input type="email" name="email" placeholder="Correo electrónico" required><br>
+        <textarea name="mensaje" placeholder="Escribe tu mensaje aquí" required></textarea><br>
+        <button type="submit">Enviar</button>
+    </form>
+    <section>
+        <p>Dirección física de la empresa</p>
+        <p>Número de teléfono</p>
+        <p>Correo de contacto</p>
+        <!-- Puedes insertar un mapa embebido o una imagen con un marcador -->
+        <img src="https://via.placeholder.com/300x200" alt="Mapa">
+    </section>
+</body>
+</html>
